@@ -13,17 +13,17 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`metadata(...)`](#metadata)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### metadata(...)
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+metadata(options: { value: string; }) => Promise<{ value: string; }>
 ```
 
 | Param         | Type                            |

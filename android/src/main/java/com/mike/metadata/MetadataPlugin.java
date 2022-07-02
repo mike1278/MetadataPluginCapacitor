@@ -12,11 +12,11 @@ public class MetadataPlugin extends Plugin {
     private Metadata implementation = new Metadata();
 
     @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
+    public void metadata(PluginCall call) {
+        String pathFile = call.getString("value");
 
         JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
+        ret.put("metadata", implementation.metadata(pathFile));
         call.resolve(ret);
     }
 }

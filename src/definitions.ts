@@ -1,3 +1,5 @@
+export interface MetadataReturn { metadata: Record<string, unknown> }
+
 export interface MetadataPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  metadata(options: { value: string }): Promise<{ value: string }>;
 }
